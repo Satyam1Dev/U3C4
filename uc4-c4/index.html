@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <style>
+      * {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+}
+#navbar {
+  background-color: teal;
+  border-radius: 10px;
+  color: white;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid green; */
+}
+#navbar > h3 > a {
+  color: white;
+}
+#user-form {
+  margin: 20px;
+}
+#user-form > form {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  /* border: 4px solid orange; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form > select {
+  width: 40%;
+  padding: 8px;
+  margin: 10px;
+}
+form > input {
+  width: 60%;
+  padding: 8px;
+  margin: 10px;
+  font-size: 16px;
+}
+form > button {
+  width: 30%;
+  cursor: pointer;
+  padding: 8px 8px;
+  font-size: 14px;
+  border-radius: 5px;
+
+  font-weight: 500;
+  background-color: teal;
+  color: white;
+  border: none;
+}
+    </style>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <h3>News App</h3>
+      <h3>Sign-Up</h3>
+      <h3>
+        <a href="worldNews.html">World News</a>
+      </h3>
+    </div>
+    <div id="user-form">
+      <form>
+        <h2>Sign Up</h2>
+        <input type="text" name=""    id="user_pic" placeholder="Enter img url"/><br />
+        <input  type="text"  name=""  id="user_name" placeholder="Enter name" /><br />
+        <input  type="text"  name=""  id="user_email"  placeholder="Enter email"/><br/>
+        <select id="user_country">
+          <option value="India">India</option>
+          <option value="China">China</option>
+          <option value="Newzeland">Newzeland</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option></select><br />
+        <button id="submit">Submit</button>
+      </form>
+      <!-- Profile Pic, (Id:- user_pic)
+Name, (Id:- user_name)
+Email, (Id:- user_email)
+country, (Id: user_country) >> Dropdown with options "India", "China", "Newzeland", "USA", "UK.  
+** Submit button will have Id:- "submit". -->
+    </div>
+  </body>
+</html>
+<script src="scripts/index.js"></script>

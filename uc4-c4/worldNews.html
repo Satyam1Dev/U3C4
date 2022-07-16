@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World News</title>
+    <link rel="stylesheet" href="styles\style.css" />
+
+    <style>
+      .news {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+#news_result > .news > img {
+  width: 200px;
+  height: auto;
+}
+#main {
+  display: flex;
+}
+#sidebar {
+  margin: 10px 0px;
+  height: 500px;
+  background-color: tan;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+#sidebar > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+    </style>
+   
+  </head>
+
+  <body>
+    <div class="navbar">
+      <input type="text" name="" id="search_box" placeholder="Search News" />
+      <div class="country">
+        <h3><a href="#" id="in">India</a></h3>
+        <h3><a href="#" id="us">USA</a></h3>
+        <h3><a href="#" id="uk">UK</a></h3>
+        <h3><a href="#" id="ch">China</a></h3>
+        <h3><a href="#" id="nz">Newzeland</a></h3>
+      </div>
+      <!-- - The nav-bar will have following :- 
+     * search box with Id as- "search_box"
+     * Link for different country news with IDs as:-
+       - India :- “in”
+       - Usa :- “us”
+       - China :- “ch”
+       - UK :- “uk”
+       - New Zealand :- “nz” -->
+    </div>
+    <div id="main">
+      <div id="sidebar">
+        <!-- Sidebar will have
+         - Image of user (Id:- "user_img")
+  - Name of user (Id:- "user_name")
+  - Email of user (Id:- "user_email")
+  - Country of user (Id:- "user_country) -->
+      </div>
+      <div id="news_result">
+        <!-- - All the news will be appended inside div with id as "news_result".
+ - Every news card will have class as "news" (Show image, title and author only in cards). -->
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module" src="scripts/worldNews.js"></script>

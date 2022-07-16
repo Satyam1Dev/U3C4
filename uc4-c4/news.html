@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailed News</title>
+   <style>
+    #main {
+  display: flex;
+}
+#sidebar {
+  margin: 10px 0px;
+  height: 500px;
+  background-color: tan;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+#sidebar > img {
+  width: 200px;
+  height: 200px;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: teal;
+  padding: 0 10px;
+}
+#navbar > h3 > a {
+  color: white;
+  text-decoration: none;
+}
+
+#detailed_news {
+  width: 80%;
+  margin-top: 100px;
+  text-align: center;
+}
+#detailed_news > div > img {
+  width: 600px;
+  height: 300px;
+}
+   </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h3><a href="index.html" id="home">Home</a></h3>
+      <h3><a href="worldNews.html" id="world_news">World News</a></h3>
+      <!-- - The nav-bar will have link for home page(Id:- "home") and link for world news(Id:- "world_news). -->
+    </div>
+
+    <div id="main">
+      <div id="sidebar">
+        <!-- Sidebar will have
+         - Image of user (Id:- "user_img")
+  - Name of user (Id:- "user_name")
+  - Email of user (Id:- "user_email")
+  - Country of user (Id:- "user_country) -->
+      </div>
+      <div id="detailed_news">
+        <!-- - The detailed news will be appended inside div with Id as "detailed_news", which will have following:-
+      * Image tag for image
+      * H3 tag for title
+      * H4 tag for description -->
+        karan
+      </div>
+    </div>
+  </body>
+</html>
+<script src="scripts\news.js" type="module"></script>
